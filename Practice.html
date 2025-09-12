@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Centered Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body style="background-color: #f8f9fa;"> <!-- Soft background -->
+
+    <!-- Container to center the component -->
+    <div class="container d-flex justify-content-center align-items-center min-vh-100">
+      
+      <!-- Soft-colored component strip -->
+      <div class="p-5 rounded-4 shadow-lg w-100" style="background-color: #e3f2fd; max-width: 600px;">
+        
+        <!-- Heading -->
+        <h2 class="text-center mb-4">User Information Form</h2>
+
+        <!-- Form starts here -->
+        <form>
+          <!-- Username -->
+          <div class="input-group mb-3">
+            <span class="input-group-text">@</span>
+            <input type="text" class="form-control" placeholder="Username" aria-label="Username">
+          </div>
+
+          <!-- Recipient Email -->
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Recipient’s username" aria-label="Recipient’s username">
+            <span class="input-group-text">@example.com</span>
+          </div>
+
+          <!-- Vanity URL -->
+          <div class="mb-3">
+            <label for="basic-url" class="form-label">Your vanity URL</label>
+            <div class="input-group">
+              <span class="input-group-text">https://example.com/users/</span>
+              <input type="text" class="form-control" id="basic-url">
+            </div>
+            <div class="form-text">Example help text goes outside the input group.</div>
+          </div>
+
+          <!-- Amount -->
+          <div class="input-group mb-3">
+            <span class="input-group-text">$</span>
+            <input type="text" class="form-control" aria-label="Amount">
+            <span class="input-group-text">.00</span>
+          </div>
+
+          <!-- Username & Server -->
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Username" aria-label="Username">
+            <span class="input-group-text">@</span>
+            <input type="text" class="form-control" placeholder="Server" aria-label="Server">
+          </div>
+
+          <!-- Textarea -->
+          <div class="input-group mb-3">
+            <span class="input-group-text">With textarea</span>
+            <textarea class="form-control" aria-label="With textarea"></textarea>
+          </div>
+
+          <!-- Submit button -->
+          <div class="d-grid">
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </div>
+        </form>
+
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
