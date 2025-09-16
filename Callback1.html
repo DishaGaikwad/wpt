@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>FIRST LINE</h1>
+    <h2>SECOND LINE</h2>
+    <p id="demo" ></p>
+
+    <script>
+        const myNumber=[1,2,3,4,-5,0,-4,-8] ;
+        const postNumber= removeNeg(myNumber,(x)=> x >=0);
+        document.getElementById("demo").innerHTML=postNumber;
+        function removeNeg(numbers,callback){
+            const myArray=[];
+            for(const x of numbers){
+                if(callback(x)){
+                    myArray.push(x);
+                }
+            }
+            return myArray;
+        } 
+    </script> 
+</body>
+</html>
